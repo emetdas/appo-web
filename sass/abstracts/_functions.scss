@@ -1,20 +1,23 @@
-@each $i in 1,2,3{
- .m-#{$i}{
+@each $i in 1, 2, 3 {
+  .m-#{$i} {
     margin: $i#{rem};
- }
- .mx-#{$i}{
+  }
+  .mx-#{$i} {
     margin: 0 $i#{rem};
- }
- .my-#{$i}{
+  }
+  .my-#{$i} {
     margin: $i#{rem} 0;
- }
- .mr-#{$i}{
+  }
+  .mr-#{$i} {
     margin-right: $i#{rem};
- }
- .mb-#{$i}{
+  }
+  .mb-#{$i} {
     margin-bottom: $i#{rem};
- }
- .ml-#{$i}{
+  }
+  .ml-#{$i} {
     margin-left: $i#{rem};
- }
+  }
+}
+.logo img {
+  width: 6rem;
 }

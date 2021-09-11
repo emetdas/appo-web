@@ -15,13 +15,13 @@
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased; }
 
-html, body {
+html,
+body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
   font-size: 62.5%;
   font-family: "Dosis", sans-serif; }
 
@@ -233,6 +233,9 @@ template {
 
 .ml-3 {
   margin-left: 3rem; }
+
+.logo img {
+  width: 6rem; }
 
 .home {
   height: 100vh;
