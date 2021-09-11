@@ -1,0 +1,62 @@
+$font-primary: 'Dosis', sans-serif;
+$container:112rem;
+$nav-height:6.5rem;
+// color-start
+$hero-bg:#223047;
+$primary:#00fff1;
+$bg-light:#f5f6fa;
+$white:#fff;
+$text-dark:#233148;
+$text-light:#97a4be;
+$white: #fff !default;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #198754 !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+
+$primary: $indigo !default;
+$secondary: $purple !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+
+// heading-map
+$heading: (
+  'h1': 4rem,
+  'h2': 2.7rem,
+  'h3': 2.3rem,
+  'h4': 2rem,
+  'h5': 1.8rem,
+  'h6': 1.5rem,
+);
+// heading-map
+// p-map-star
+$p-font-sizes: (
+  null: 1.5rem,
+  480px: 1.6rem,
+  640px: 1.6rem,
+  1024px: 1.7rem,
+  1224px: 1.9rem,
+);
+// p-map-end 

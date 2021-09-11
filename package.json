@@ -1,0 +1,21 @@
+{
+  "name": "appo",
+  "description": "description",
+  "authors": "Emet Das",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "start": "node-sass sass/style.scss css/style.css -w",
+    "compress": "node-sass css/style.css css/compile.css --output-style compressed",
+    "babel": "babel js/script.js --watch --out-dir dist",
+    "prefix": "postcss --use autoprefixer -b \"last 10 versions\" css/style.css -o css/style.prefix.css"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "autoprefixer": "^10.3.4",
+    "postcss-cli": "^8.3.1"
+  }
+}
