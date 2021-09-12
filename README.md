@@ -1,25 +1,3 @@
-
-Everything needed to power
-your app brend online
-
-Modern Flat Design
-
-Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diamdo.
-
-First 7 Days Free
-
-Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diamdo.
-
-Fully Support
-
-Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diamdo.
-
-User Friendly
-
-Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diamdo.
-
-------------
-
 Get More From Your
 Smartphone
 
