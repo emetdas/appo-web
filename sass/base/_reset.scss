@@ -20,7 +20,7 @@ body {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   // 1rem = 16px 10/16 = 0.625*100 = 62.5
-  // 1rem = 10px = 62.5% 
+  // 1rem = 10px = 62.5%
   font-size: 62.5%;
   font-family: $font-primary;
 }
@@ -103,6 +103,8 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
+  outline: none;
+  border: none;
 }
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,

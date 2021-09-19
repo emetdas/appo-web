@@ -1,76 +1,39 @@
-.home {
-  height: 100vh;
-  width: 100%;
+@use 'sass:math';
+.logo img {
+  width: 6rem;
 }
-.navbar{
+header {
+  box-shadow: 0 0 0.1rem $bg-light;
+}
+.navbar {
+  align-items: center;
   z-index: 100;
-}
-.navigation {
-  height: $nav-height;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important; 
-  & .nav_list {
+  & ul li {
     display: inline-block;
-    margin: 0 0.4rem;
+    padding: 0.5rem 1rem;
   }
-  & .nav_manue {
-    z-index: 90;
-    background: $white;
-    @include media(992px) {
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      top: $nav-height;
-    }
+  & ul li a {
+    color: $white;
   }
 }
-.nav_icon {
-  cursor: pointer;
-  position: relative;
-  @include w-h(3rem, 0.3rem);
-  background: $gray-900;
-  display: none;
-  @include media(992px) {
-    display: block;
-    right: 2rem;
-  }
-  &::before,
-  &::after {
-    cursor: pointer;
-    @include prefix(transition, all 0.5s ease-in-out);
-    @include sudo();
-    left: 0;
-    @include w-h(100%, 100%);
-    background: $gray-900;
-  }
-  &::before {
-    @include prefix(transform, translateY(-0.8rem));
-  }
-  &::after {
-    @include prefix(transform, translateY(0.8rem));
-  }
-  &.active {
-    & {
-      background: transparent;
+@media (max-width: 420px) {
+  .navbar {
+    position: relative;
+    & ul {
+      display: none;
+      &.manue-active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        background: $dark;
+        width: 100%;
+        height: calc(100vh - #{$nav-height});
+        left: 0;
+        & li {
+          display: block;
+          text-align: center;
+        }
+      }
     }
-    &::before {
-      @include prefix(transform, rotate(45deg));
-    }
-    &::after {
-      @include prefix(transform, rotate(-45deg));
-    }
-  }
-}
-.nav_manue.active {
-  height: calc(100vh - #{$nav-height});
-  width: 100%;
-  left: 0;
-  opacity: 1;
-  visibility: visible;
-  & .nav_list{
-    text-align: center;
-    display: block; 
-    @include m-t(2rem);
   }
 }

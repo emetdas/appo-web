@@ -1,0 +1,46 @@
+.container {
+  max-width: $container;
+  padding: 0 1rem;
+  @include m-auto;
+}
+.d-flex {
+  @extend %d-flex;
+}
+.d-grid {
+  @extend %d-grid;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.ai-c {
+  align-items: center;
+}
+.js-sb {
+  justify-content: space-between;
+}
+.img-fluid {
+  width: 100%;
+}
+.text-white {
+  color: $white;
+}
+.text-light {
+  color: $text-light;
+}
+.btn-primary {
+  color: $text-dark;
+  background: $primary;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  display: inline-block;
+  font-weight: 500;
+}

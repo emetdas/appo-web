@@ -3,6 +3,9 @@
     #{$prefix}#{$property}: $parameters;
   }
 }
+@mixin m-auto {
+  margin: 0 auto;
+}
 @mixin w-h($w, $h) {
   width: $w;
   height: $h;
@@ -15,6 +18,12 @@
 }
 @mixin p-r($p) {
   padding-right: $p;
+}
+%d-flex {
+  display: flex;
+}
+%d-grid {
+  display: grid;
 }
 @mixin p-t($p) {
   padding-top: $p;
@@ -34,10 +43,10 @@
 @mixin m-b($m) {
   margin-bottom: $m;
 }
-@mixin br($property,$value){
+@mixin br($property, $value) {
   $property: $value;
 }
-@mixin ta($value){
+@mixin ta($value) {
   text-align: $value;
 }
 @mixin sudo {
@@ -70,7 +79,7 @@
 @mixin shadow-inset($i, $h, $v, $b, $c) {
   @include prefix(box-shadow, $i $h $v $b $c);
 }
-@mixin media($breakpoint){
+@mixin media($breakpoint) {
   @media (max-width: $breakpoint) {
     @content;
   }
