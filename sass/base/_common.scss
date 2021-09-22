@@ -44,3 +44,17 @@
   display: inline-block;
   font-weight: 500;
 }
+.section-heading {
+  position: relative;
+  text-align: center;
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+    height: 0.3rem;
+    background: $primary;
+  }
+}

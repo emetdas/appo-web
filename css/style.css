@@ -228,6 +228,19 @@ template {
   display: inline-block;
   font-weight: 500; }
 
+.section-heading {
+  position: relative;
+  text-align: center; }
+  .section-heading::after {
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+    height: 0.3rem;
+    background: #00fff1; }
+
 @use 'sass:math';
 .logo img {
   width: 6rem; }
@@ -303,3 +316,29 @@ header {
       .home-right img {
         height: 30rem;
         margin-bottom: 2rem; } }
+
+.feature {
+  padding: 10rem 0 7rem 0; }
+
+.features-item {
+  margin-top: 5rem;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
+  .features-item .features-items {
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 0.3rem #ced4da; }
+    .features-item .features-items * {
+      margin: 1rem 0; }
+    .features-item .features-items .paragraph {
+      color: #97a4be; }
+
+.icon-features {
+  width: 5rem;
+  height: 5rem; }
+
+.why-item {
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr)); }
+
+.why-image {
+  width: 100%; }
