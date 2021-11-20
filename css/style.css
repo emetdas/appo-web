@@ -338,7 +338,20 @@ header {
   height: 5rem; }
 
 .why-item {
-  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  grid-column-gap: 10rem;
+  align-items: center; }
+
+.why-heading {
+  font-weight: 500;
+  padding-bottom: 2rem; }
+
+.why-paragraph {
+  font-weight: 400;
+  color: #97a4be; }
 
 .why-image {
   width: 100%; }
+
+.item-1 {
+  background: #f5f6fa; }
