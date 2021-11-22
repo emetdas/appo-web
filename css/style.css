@@ -351,10 +351,16 @@ header {
   color: #97a4be; }
 
 .btn-primray {
-  background: #00fff1; }
+  background: #00fff1;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  font-weight: bold; }
 
 .why-image {
   width: 100%; }
 
 .item-1 {
   background: #f5f6fa; }
+
+.text-right {
+  text-align: right; }
