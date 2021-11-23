@@ -348,13 +348,14 @@ header {
 
 .why-paragraph {
   font-weight: 400;
-  color: #97a4be; }
+  color: #97a4be;
+  margin-bottom: 2rem; }
 
 .btn-primray {
   background: #00fff1;
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   display: inline-block;
-  font-weight: bold; }
+  font-weight: 500; }
 
 .why-image {
   width: 100%; }
@@ -364,3 +365,43 @@ header {
 
 .text-right {
   text-align: right; }
+
+.accrodion-item {
+  background: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.4rem #ced4da;
+  -webkit-box-shadow: 0 0 0.4rem #ced4da;
+  -moz-box-shadow: 0 0 0.4rem #ced4da;
+  -ms-box-shadow: 0 0 0.4rem #ced4da;
+  -o-box-shadow: 0 0 0.4rem #ced4da;
+  margin-top: 1rem; }
+  .accrodion-item.active {
+    background: #00fff1; }
+  .accrodion-item .accrodion-heading {
+    padding: 0.9rem 1rem;
+    gap: 2rem;
+    align-items: center;
+    cursor: pointer; }
+    .accrodion-item .accrodion-heading h4 {
+      font-weight: 500; }
+  .accrodion-item .accrodion-content {
+    padding: 0 1rem 1rem 1rem;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clip-path: circle(2.1% at 49% 0);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+    .accrodion-item .accrodion-content.active {
+      opacity: 1;
+      visibility: visible;
+      clip-path: circle(99.7% at 50% 0);
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease; }

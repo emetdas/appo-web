@@ -10,12 +10,13 @@
 .why-paragraph {
   font-weight: 400;
   color: $text-light;
+  margin-bottom: 2rem;
 }
 .btn-primray {
   background: $primary;
-  @include p(0.5rem 1.5rem);
+  @include p(0.8rem 1.5rem);
   display: inline-block;
-  font-weight: bold;
+  font-weight: 500;
 }
 .why-image {
   width: 100%;
@@ -26,3 +27,39 @@
 .text-right {
   text-align: right;
 }
+
+// acrrodion
+.accrodion-item {
+  background: $white;
+  border-radius: 0.3rem;
+  @include shadow(0, 0, 0.4rem, $gray-400);
+  margin-top: 1rem;
+  &.active {
+    background: $primary;
+  }
+  & .accrodion-heading {
+    padding: 0.9rem 1rem;
+    gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    & h4 {
+      font-weight: 500;
+    }
+  }
+  & .accrodion-content {
+    padding: 0 1rem 1rem 1rem;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clip-path: circle(2.1% at 49% 0);
+    @include prefix(transition, all 0.5s ease);
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      clip-path: circle(99.7% at 50% 0);
+      @include prefix(transition, all 0.5s ease);
+    }
+  }
+}
+// acrrodion
