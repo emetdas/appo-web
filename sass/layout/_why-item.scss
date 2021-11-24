@@ -186,3 +186,45 @@
   bottom: -5rem;
   transform: translateX(-50%);
 }
+.footer-top {
+  padding: 5rem 0;
+  & .footer-item-heading {
+    padding: 2rem 0;
+  }
+}
+.text-center {
+  text-align: center;
+}
+.footer-items {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.footer-grid {
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bttom {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: $dark;
+  color: $white;
+}
+.footer-left {
+  & h4 {
+    color: $primary;
+  }
+}
+.footer-right {
+  & i {
+    margin: 0 1rem;
+    color: $white;
+  }
+}
+.input-container {
+  & input {
+    padding: 0.3rem 0.4rem;
+    outline: none;
+    width: 40rem;
+  }
+}
