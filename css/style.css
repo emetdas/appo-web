@@ -405,3 +405,49 @@ header {
       -moz-transition: all 0.5s ease;
       -ms-transition: all 0.5s ease;
       -o-transition: all 0.5s ease; }
+
+.app-place-bottom {
+  transform: translateY(8rem); }
+
+.everything {
+  padding: 4rem 0;
+  background: #f5f6fa; }
+
+.everything-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem; }
+
+.phone-list li {
+  font-weight: 500;
+  padding: 0.5rem 0; }
+  .phone-list li i {
+    margin-right: 1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    background: #00fff1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.3rem;
+    font-size: 1.4rem; }
+
+.watch {
+  height: 80vh;
+  background: #212529;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  text-align: center; }
+  .watch .watch-icon i {
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 5rem;
+    margin: 2rem 0;
+    background: #00fff1;
+    color: #000; }
+  .watch .watch-heading {
+    margin: 3rem 0;
+    font-weight: 500; }

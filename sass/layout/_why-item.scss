@@ -62,4 +62,54 @@
     }
   }
 }
+.app-place-bottom {
+  transform: translateY(8rem);
+}
 // acrrodion
+.everything {
+  padding: 4rem 0;
+  background: $bg-light;
+}
+.everything-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.phone-list {
+  & li {
+    font-weight: 500;
+    padding: 0.5rem 0;
+    & i {
+      margin-right: 1rem;
+      @include w-h(2.3rem, 2.3rem);
+      background: $primary;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 2.3rem;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.watch {
+  height: 80vh;
+  background: $dark;
+  color: $white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  & .watch-icon i {
+    cursor: pointer;
+    @include w-h(5rem, 5rem);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 5rem;
+    margin: 2rem 0;
+    background: $primary;
+    color: $black;
+  }
+  & .watch-heading {
+    margin: 3rem 0;
+    font-weight: 500;
+  }
+}
