@@ -64,6 +64,10 @@
 }
 .app-place-bottom {
   transform: translateY(8rem);
+  @media (max-width: 768px) {
+    width: 25rem;
+    transform: translateY(0);
+  }
 }
 // acrrodion
 .everything {
@@ -112,4 +116,73 @@
     margin: 3rem 0;
     font-weight: 500;
   }
+}
+.download-container {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: url('../../images/map.png') no-repeat center center;
+}
+.btn-glow {
+  border-radius: 0;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    bottom: -1rem;
+    height: 2rem;
+    background: rgba($primary, 0.3);
+    filter: blur(1rem);
+  }
+}
+.aim {
+  background: $dark;
+  padding: 4rem 0;
+  & blockquote {
+    color: $primary;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.app-download-images {
+  @include w-h(30rem, 40rem);
+}
+.download-start {
+  padding: 4rem 0;
+  background: $bg-light;
+}
+.download-grid {
+  place-items: center;
+}
+.grid-heading {
+  margin: 2rem 0;
+}
+.appdownload-content {
+  .grid-heading {
+    color: $text-dark;
+    font-weight: 500;
+  }
+  & .paragrahp {
+    padding: 0 0 2rem 0;
+    color: $text-light;
+  }
+  & .devices {
+    width: 10rem;
+    margin-right: 1rem;
+  }
+}
+.get {
+  left: 50%;
+  bottom: -5rem;
+  transform: translateX(-50%);
 }
